@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Probus</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="container contentWrapper">
+      <form class="needs-validation formEl" id="formEl" novalidate>
+        <div class="form-row d-flex justify-content-center d-flex justify-content-center">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom01">Ime</label>
+            <input type="text" data-condition="^[a-zA-Z\s]+$" class="form-control validationCheck" name="first_name"
+              id="validationCustom01" placeholder="First name" required>
+            <div class="invalid-feedback">
+              You must provide a valid first name with letters only
+            </div>
+          </div>
+        </div>
+        <div class="form-row d-flex justify-content-center">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom02">Prezime</label>
+            <input type="text" data-condition="^[a-zA-Z\s]+$" class="form-control validationCheck" name="last_name"
+              id="validationCustom02" placeholder="Last name" required>
+            <div class="invalid-feedback">
+              You must provide a valid last name with letters only
+            </div>
+          </div>
+        </div>
+        <div class="form-row d-flex justify-content-center">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom01">E-mail adresa</label>
+            <input type="email" data-condition="^[a-zA-Z\s@.]+$" class="form-control validationCheck" name="email"
+              id="validationCustom01" placeholder="Your e-mail" required>
+            <div class="invalid-feedback">
+              You must provide a valid email
+            </div>
+          </div>
+        </div>
+        <div class="form-row d-flex justify-content-center">
+          <div class="col-md-6 mb-3">
+            <label for="validationTextarea">Adresa</label>
+            <input data-condition="^[a-zA-Z\s]+[\s]+[0-9]" class="form-control validationCheck" name="address"
+              id="validationTextarea" placeholder="Street name and a number" required>
+            <div class="invalid-feedback">
+              Please provide a valid address with a name and a number
+            </div>
+          </div>
+        </div>
+        <div class="form-row d-flex justify-content-center">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom04">Grad</label>
+            <input type="text" data-condition="^[a-zA-Z\s]+$" class="form-control validationCheck" name="city"
+              id="validationCustom04" placeholder="City" required>
+            <div class="invalid-feedback">
+              You must provide a valid city with letters only
+            </div>
+          </div>
+        </div>
+        <div class="form-row d-flex justify-content-center">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom04">Telefon</label>
+            <input type="text" data-condition="^[a-zA-Z\s]+$" class="form-control validationCheck" name="phone"
+              id="validationCustom04" placeholder="City" required>
+            <div class="invalid-feedback">
+              You must provide a valid pone
+            </div>
+          </div>
+        </div>
+        <div class="form-group d-flex justify-content-center">
+          <div class="form-check">
+            <div>
+              wine 1
+              </label>
+              <input type="number" class="numInput form-control validationCheck custom-select" name="wine" required>
+              <input type="hidden" id="wine1" class="wineInput form-control validationCheck custom-select" name="wine1"
+                required>
+              <div>
+                <label class="form-check-labe2" for="invalidCheck">
+                  wine 2
+                </label>
+                <input type="number" class="numInput form-control validationCheck custom-select" name="wine" required>
+                <input type="hidden" id="wine2" class="wineInput form-control validationCheck custom-select"
+                  name="wine2" required>
+                <div>
+                  <label class="form-check-labe3" for="invalidCheck">
+                    wine 3
+                  </label>
+                  <input type="number" class="numInput form-control validationCheck custom-select" name="wine" required>
+                  <input type="hidden" id="wine3" class="wineInput form-control validationCheck custom-select"
+                    name="wine3" required>
+                  <div class="invalid-feedback">
+                    You must choose wine before submitting.
+                  </div>
+                </div>
+                <div class="form-row d-flex justify-content-center"></div>
+                <div class="col-md-6 mb-3">
+                  <!-- <div class="invalid-feedback">Please choose </div> -->
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary d-flex mx-auto submitBtn" type="button">Submit form</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+
+  </script>
+  <script src="js/validation.js"></script>
+  <script src="js/submitForm.js"></script>
+</body>
+
+</html>
+
+<!-- style="display:none;" -->
